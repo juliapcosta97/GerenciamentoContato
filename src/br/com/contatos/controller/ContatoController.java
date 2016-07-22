@@ -49,8 +49,10 @@ public class ContatoController implements Initializable {
 
 	private void preencherLista(){
 
+		//Preenche a lista
+
 		lstContatos.getItems().clear();
-		
+
 		Connection con = MySqlConnect.ConectarDb();
 
 		String sql = "select * from contact";
@@ -82,9 +84,9 @@ public class ContatoController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
-		
+
 		preencherLista();
-		
+
 	}
 }
 
